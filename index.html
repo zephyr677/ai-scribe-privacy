@@ -5,36 +5,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Scribe - Privacy Policy</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; line-height: 1.6; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; line-height: 1.6; color: #333; }
         h1 { color: #1a73e8; }
-        h2 { color: #333; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        h2 { color: #333; border-bottom: 1px solid #eee; padding-bottom: 10px; margin-top: 30px; }
+        h3 { color: #555; }
+        .lang-switcher { text-align: right; margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        .lang-switcher a { margin-left: 10px; cursor: pointer; color: #1a73e8; text-decoration: none; font-weight: bold; font-size: 0.8em; border: 1px solid #eee; padding: 2px 5px; border-radius: 3px; }
+        .lang-switcher a:hover { background: #f8f9fa; }
+        .content-section { display: none; }
+        .active { display: block; }
     </style>
 </head>
 <body>
-    <h1>Privacy Policy for AI Scribe</h1>
-    <p><strong>Last updated:</strong> January 7, 2026</p>
-    <h2>Introduction</h2>
-    <p>AI Scribe is an audio and image transcription application. This privacy policy explains how we handle your data.</p>
-    <h2>Data Collection and Processing</h2>
-    <h3>Audio and Image Data</h3>
-    <ul>
-        <li><strong>Local Processing (Gemma Mode):</strong> When you use Gemma 3n E2B local transcription, all audio and image processing happens entirely on your device. No audio or image data are transmitted to external servers.</li>
-        <li><strong>Cloud Processing (Google Cloud API Mode):</strong> When you choose Google Cloud API for transcription, your audio and image data are sent to Google Cloud servers for processing.</li>
-    </ul>
-    <h3>Transcriptions</h3>
-    <p>All transcriptions are stored locally on your device. We do not have access to your transcriptions.</p>
-    <h2>Data We Do NOT Collect</h2>
-    <p>We do not collect: personal information, usage analytics, location data, device identifiers, or any audio recordings or images.</p>
-    <h2>Third-Party Services</h2>
-    <p>When using Cloud API mode, audio and image data are processed by Google Cloud API, subject to <br>
-    <a href="https://cloud.google.com/terms/cloud-privacy-notice">Google Cloud Privacy Policy</a>
-    <br>
-    and
-    <br>
-    <a href="https://ai.google.dev/gemini-api/terms">Google Gemini API Additional Terms of Service</a>
-     specifically the section "Unpaid Services – How Google uses your data"
-    </p>
-    <h2>Data Security</h2>
-    <p>All network communications use HTTPS encryption. No data is transmitted when using offline (Gemma Local) mode.</p>
+
+    <div class="lang-switcher">
+        <a onclick="showLang('en')">English</a>
+        <a onclick="showLang('it')">Italiano</a>
+        <a onclick="showLang('es')">Español</a>
+        <a onclick="showLang('fr')">Français</a>
+        <a onclick="showLang('de')">Deutsch</a>
+        <a onclick="showLang('pt')">Português</a>
+    </div>
+
+    <div id="lang-it" class="content-section">
+        <h1>Informativa sulla Privacy per AI Scribe</h1>
+        <p><strong>Ultimo aggiornamento:</strong> 7 Gennaio 2026</p>
+        <h2>Introduzione</h2>
+        <p>AI Scribe è un'applicazione per la trascrizione di audio e immagini. Questa informativa spiega come gestiamo i tuoi dati.</p>
+        <h2>Raccolta e Trattamento dei Dati</h2>
+        <h3>Dati Audio e Immagini</h3>
+        <ul>
+            <li><strong>Elaborazione Locale (Modalità Gemma):</strong> Tutta l'elaborazione avviene interamente sul tuo dispositivo. Nessun dato viene trasmesso a server esterni.</li>
+            <li><strong>Elaborazione Cloud (Modalità Google Cloud API):</strong> I dati vengono inviati ai server Google Cloud per l'elaborazione.</li>
+        </ul>
+        <h3>Trascrizioni</h3>
+        <p>Tutte le trascrizioni sono memorizzate localmente sul tuo dispositivo. Non abbiamo accesso ad esse.</p>
+        <h2>Dati che NON raccogliamo</h2>
+        <p>Non raccogliamo: informazioni personali, analisi sull'uso, dati sulla posizione, identificativi del dispositivo o registrazioni audio/immagini.</p>
+    </div>
+
+    <div id="lang-en" class="content-section">
+        <h1>Privacy Policy for AI Scribe</h1>
+        <p><strong>Last updated:</strong> January 7, 2026</p>
+        <h2>Introduction</h2>
+        <p>AI Scribe is an audio and image transcription application. This privacy policy explains how we handle your data.</p>
+        <h2>Data Collection and Processing</h2>
+        <h3>Audio and Image Data</h3>
+        <ul>
+            <li><strong>Local Processing (Gemma Mode):</strong> All audio and image processing happens entirely on your device. No data are transmitted to external servers.</li>
+            <li><strong>Cloud Processing (Google Cloud API Mode):</strong> Your audio and image data are sent to Google Cloud servers for processing.</li>
+        </ul>
+        <h3>Transcriptions</h3>
+        <p>All transcriptions are stored locally on your device. We do not have access to your transcriptions.</p>
+        <h2>Data We Do NOT Collect</h2>
+        <p>We do not collect: personal information, usage analytics, location data, device identifiers, or any audio recordings or images.</p>
+    </div>
+
+    <div id="lang-es" class="content-section">
+        <h1>Política de Privacidad de AI Scribe</h1>
+        <p><strong>Última actualización:</strong> 7 de enero de 2026</p>
+        <h2>Introducción</h2>
+        <p>AI Scribe es una aplicación de transcripción de audio e imágenes.</p>
+        <h2>Recopilación de Datos</h2>
+        <ul>
+            <li><strong>Procesamiento Local:</strong> Todo el procesamiento ocurre en su dispositivo.</li>
+            <li><strong>Procesamiento en la Nube:</strong> Sus datos se envían a Google Cloud para su procesamiento.</li>
+        </ul>
+    </div>
+
+    <div id="lang-fr" class="content-section">
+        <h1>Politique de Confidentialité d'AI Scribe</h1>
+        <p><strong>Dernière mise à jour :</strong> 7 Janvier 2026</p>
+        <h2>Traitement des Données</h2>
+        <ul>
+            <li><strong>Traitement Local :</strong> Tout se passe sur votre appareil.</li>
+            <li><strong>Traitement Cloud :</strong> Les données sont envoyées aux serveurs Google Cloud.</li>
+        </ul>
+    </div>
+
+    <div id="lang-de" class="content-section">
+        <h1>Datenschutzerklärung für AI Scribe</h1>
+        <p><strong>Zuletzt aktualisiert:</strong> 7. Januar 2026</p>
+        <h2>Datenverarbeitung</h2>
+        <ul>
+            <li><strong>Lokale Verarbeitung:</strong> Alle Verarbeitungen erfolgen auf Ihrem Gerät.</li>
+            <li><strong>Cloud-Verarbeitung:</strong> Daten werden zur Verarbeitung an Google Cloud-Server gesendet.</li>
+        </ul>
+    </div>
+
+    <div id="lang-pt" class="content-section">
+        <h1>Política de Privacidade do AI Scribe</h1>
+        <p><strong>Última atualização:</strong> 7 de Janeiro de 2026</p>
+        <h2>Processamento de Dados</h2>
+        <ul>
+            <li><strong>Processamento Local:</strong> Todo o processamento ocorre no seu dispositivo.</li>
+            <li><strong>Processamento em Nuvem:</strong> Seus dados são enviados aos servidores do Google Cloud.</li>
+        </ul>
+    </div>
+
+    <script>
+        function showLang(langCode) {
+            // Nasconde tutte le sezioni
+            const sections = document.querySelectorAll('.content-section');
+            sections.forEach(s => s.classList.remove('active'));
+
+            // Mostra la sezione scelta
+            const target = document.getElementById('lang-' + langCode);
+            if (target) {
+                target.classList.add('active');
+            } else {
+                // FALLBACK: Se la lingua non esiste, mostra Inglese
+                document.getElementById('lang-en').classList.add('active');
+            }
+        }
+
+        // 1. Rileva lingua browser
+        const userLang = navigator.language || navigator.userLanguage; 
+        const shortLang = userLang.split('-')[0]; // Prende 'it' da 'it-IT'
+        
+        // 2. Elenco lingue supportate
+        const supported = ['en', 'it', 'es', 'fr', 'de', 'pt'];
+        
+        // 3. Avvio: se shortLang è in supported usa quella, altrimenti 'en'
+        showLang(supported.includes(shortLang) ? shortLang : 'en');
+    </script>
 </body>
 </html>
