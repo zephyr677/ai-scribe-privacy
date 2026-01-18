@@ -5,36 +5,224 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Scribe - Privacy Policy</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; line-height: 1.6; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; line-height: 1.6; color: #333; }
         h1 { color: #1a73e8; }
-        h2 { color: #333; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        h2 { color: #333; border-bottom: 1px solid #eee; padding-bottom: 10px; margin-top: 30px; }
+        h3 { color: #555; }
+        .lang-switcher { text-align: right; margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        .lang-switcher a { margin-left: 10px; cursor: pointer; color: #1a73e8; text-decoration: none; font-weight: bold; font-size: 0.8em; border: 1px solid #eee; padding: 2px 5px; border-radius: 3px; }
+        .lang-switcher a:hover { background: #f8f9fa; }
+        .content-section { display: none; }
+        .active { display: block; }
+        /* Link styles to match original intent */
+        a { color: #1a73e8; text-decoration: none; }
+        a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
-    <h1>Privacy Policy for AI Scribe</h1>
-    <p><strong>Last updated:</strong> January 7, 2026</p>
-    <h2>Introduction</h2>
-    <p>AI Scribe is an audio and image transcription application. This privacy policy explains how we handle your data.</p>
-    <h2>Data Collection and Processing</h2>
-    <h3>Audio and Image Data</h3>
-    <ul>
-        <li><strong>Local Processing (Gemma Mode):</strong> When you use Gemma 3n E2B local transcription, all audio and image processing happens entirely on your device. No audio or image data are transmitted to external servers.</li>
-        <li><strong>Cloud Processing (Google Cloud API Mode):</strong> When you choose Google Cloud API for transcription, your audio and image data are sent to Google Cloud servers for processing.</li>
-    </ul>
-    <h3>Transcriptions</h3>
-    <p>All transcriptions are stored locally on your device. We do not have access to your transcriptions.</p>
-    <h2>Data We Do NOT Collect</h2>
-    <p>We do not collect: personal information, usage analytics, location data, device identifiers, or any audio recordings or images.</p>
-    <h2>Third-Party Services</h2>
-    <p>When using Cloud API mode, audio and image data are processed by Google Cloud API, subject to <br>
-    <a href="https://cloud.google.com/terms/cloud-privacy-notice">Google Cloud Privacy Policy</a>
-    <br>
-    and
-    <br>
-    <a href="https://ai.google.dev/gemini-api/terms">Google Gemini API Additional Terms of Service</a>
-     specifically the section "Unpaid Services – How Google uses your data"
-    </p>
-    <h2>Data Security</h2>
-    <p>All network communications use HTTPS encryption. No data is transmitted when using offline (Gemma Local) mode.</p>
+
+    <div class="lang-switcher">
+        <a onclick="showLang('en')">English</a>
+        <a onclick="showLang('it')">Italiano</a>
+        <a onclick="showLang('es')">Español</a>
+        <a onclick="showLang('fr')">Français</a>
+        <a onclick="showLang('de')">Deutsch</a>
+        <a onclick="showLang('pt')">Português</a>
+    </div>
+
+    <div id="lang-en" class="content-section">
+        <h1>Privacy Policy for AI Scribe</h1>
+        <p><strong>Last updated:</strong> January 18, 2026</p>
+        <h2>Introduction</h2>
+        <p>AI Scribe is an audio and image transcription application. This privacy policy explains how we handle your data.</p>
+        <h2>Data Collection and Processing</h2>
+        <h3>Audio and Image Data</h3>
+        <ul>
+            <li><strong>Local Processing (Gemma Mode):</strong> When you use Gemma 3n E2B local transcription, all audio and image processing happens entirely on your device. No audio or image data are transmitted to external servers.</li>
+            <li><strong>Cloud Processing (Google Cloud API Mode):</strong> When you choose Google Cloud API for transcription, your audio and image data are sent to Google Cloud servers for processing.</li>
+        </ul>
+        <h3>Transcriptions</h3>
+        <p>All transcriptions are stored locally on your device. We do not have access to your transcriptions.</p>
+        <h2>Data We Do NOT Collect</h2>
+        <p>We do not collect: personal information, usage analytics, location data, device identifiers, or any audio recordings or images.</p>
+        <h2>Third-Party Services</h2>
+        <p>When using Cloud API mode, audio and image data are processed by Google Cloud API, subject to <br>
+        <a href="https://cloud.google.com/terms/cloud-privacy-notice">Google Cloud Privacy Policy</a>
+        <br>
+        and
+        <br>
+        <a href="https://ai.google.dev/gemini-api/terms">Google Gemini API Additional Terms of Service</a>
+         specifically the section "Unpaid Services – How Google uses your data"
+        </p>
+        <h2>Data Security</h2>
+        <p>All network communications use HTTPS encryption. No data is transmitted when using offline (Gemma Local) mode.</p>
+    </div>
+
+    <div id="lang-it" class="content-section">
+        <h1>Informativa sulla Privacy per AI Scribe</h1>
+        <p><strong>Ultimo aggiornamento:</strong> 18 Gennaio 2026</p>
+        <h2>Introduzione</h2>
+        <p>AI Scribe è un'applicazione per la trascrizione di audio e immagini. Questa informativa spiega come gestiamo i tuoi dati.</p>
+        <h2>Raccolta e Trattamento dei Dati</h2>
+        <h3>Dati Audio e Immagini</h3>
+        <ul>
+            <li><strong>Elaborazione Locale (Modalità Gemma):</strong> Quando utilizzi la trascrizione locale Gemma 3n E2B, tutta l'elaborazione di audio e immagini avviene interamente sul tuo dispositivo. Nessun dato audio o immagine viene trasmesso a server esterni.</li>
+            <li><strong>Elaborazione Cloud (Modalità Google Cloud API):</strong> Quando scegli l'API Google Cloud per la trascrizione, i tuoi dati audio e le immagini vengono inviati ai server Google Cloud per l'elaborazione.</li>
+        </ul>
+        <h3>Trascrizioni</h3>
+        <p>Tutte le trascrizioni sono memorizzate localmente sul tuo dispositivo. Noi non abbiamo accesso alle tue trascrizioni.</p>
+        <h2>Dati che NON raccogliamo</h2>
+        <p>Non raccogliamo: informazioni personali, analisi sull'uso, dati sulla posizione, identificativi del dispositivo o qualsiasi registrazione audio o immagine.</p>
+        <h2>Servizi di Terze Parti</h2>
+        <p>Quando si utilizza la modalità Cloud API, i dati audio e le immagini vengono elaborati dall'API di Google Cloud, soggetti alla <br>
+        <a href="https://cloud.google.com/terms/cloud-privacy-notice">Informativa sulla privacy di Google Cloud</a>
+        <br>
+        e ai
+        <br>
+        <a href="https://ai.google.dev/gemini-api/terms">Termini aggiuntivi dell'API Google Gemini</a>
+         in particolare alla sezione "Servizi non a pagamento – Come Google utilizza i tuoi dati"
+        </p>
+        <h2>Sicurezza dei Dati</h2>
+        <p>Tutte le comunicazioni di rete utilizzano la crittografia HTTPS. Nessun dato viene trasmesso quando si utilizza la modalità offline (Gemma Local).</p>
+    </div>
+
+    <div id="lang-es" class="content-section">
+        <h1>Política de Privacidad de AI Scribe</h1>
+        <p><strong>Última actualización:</strong> 18 de enero de 2026</p>
+        <h2>Introducción</h2>
+        <p>AI Scribe es una aplicación de transcripción de audio e imágenes. Esta política de privacidad explica cómo manejamos sus datos.</p>
+        <h2>Recopilación y Procesamiento de Datos</h2>
+        <h3>Datos de Audio e Imagen</h3>
+        <ul>
+            <li><strong>Procesamiento Local (Modo Gemma):</strong> Cuando utiliza la transcripción local Gemma 3n E2B, todo el procesamiento de audio e imagen ocurre completamente en su dispositivo. No se transmiten datos de audio o imagen a servidores externos.</li>
+            <li><strong>Procesamiento en la Nube (Modo Google Cloud API):</strong> Cuando elige la API de Google Cloud para la transcripción, sus datos de audio e imagen se envían a los servidores de Google Cloud para su procesamiento.</li>
+        </ul>
+        <h3>Transcripciones</h3>
+        <p>Todas las transcripciones se almacenan localmente en su dispositivo. No tenemos acceso a sus transcripciones.</p>
+        <h2>Datos que NO recopilamos</h2>
+        <p>No recopilamos: información personal, análisis de uso, datos de ubicación, identificadores de dispositivos ni grabaciones de audio o imágenes.</p>
+        <h2>Servicios de Terceros</h2>
+        <p>Al utilizar el modo Cloud API, los datos de audio e imagen son procesados por la API de Google Cloud, sujetos al <br>
+        <a href="https://cloud.google.com/terms/cloud-privacy-notice">Aviso de Privacidad de Google Cloud</a>
+        <br>
+        y a los
+        <br>
+        <a href="https://ai.google.dev/gemini-api/terms">Términos Adicionales de la API de Google Gemini</a>
+         específicamente la sección "Servicios no pagados – Cómo Google utiliza sus datos"
+        </p>
+        <h2>Seguridad de los Datos</h2>
+        <p>Todas las comunicaciones de red utilizan cifrado HTTPS. No se transmiten datos cuando se utiliza el modo fuera de línea (Gemma Local).</p>
+    </div>
+
+    <div id="lang-fr" class="content-section">
+        <h1>Politique de Confidentialité d'AI Scribe</h1>
+        <p><strong>Dernière mise à jour :</strong> 18 Janvier 2026</p>
+        <h2>Introduction</h2>
+        <p>AI Scribe est une application de transcription audio et d'images. Cette politique de confidentialité explique comment nous traitons vos données.</p>
+        <h2>Collecte et Traitement des Données</h2>
+        <h3>Données Audio et Image</h3>
+        <ul>
+            <li><strong>Traitement Local (Mode Gemma) :</strong> Lorsque vous utilisez la transcription locale Gemma 3n E2B, tout le traitement audio et image se fait entièrement sur votre appareil. Aucune donnée audio ou image n'est transmise à des serveurs externes.</li>
+            <li><strong>Traitement Cloud (Mode API Google Cloud) :</strong> Lorsque vous choisissez l'API Google Cloud pour la transcription, vos données audio et image sont envoyées aux serveurs Google Cloud pour traitement.</li>
+        </ul>
+        <h3>Transcriptions</h3>
+        <p>Toutes les transcriptions sont stockées localement sur votre appareil. Nous n'avons pas accès à vos transcriptions.</p>
+        <h2>Données que nous ne collectons PAS</h2>
+        <p>Nous ne collectons pas : informations personnelles, analyses d'utilisation, données de localisation, identifiants d'appareils ou enregistrements audio ou images.</p>
+        <h2>Services Tiers</h2>
+        <p>Lors de l'utilisation du mode Cloud API, les données audio et image sont traitées par l'API Google Cloud, soumises à <br>
+        <a href="https://cloud.google.com/terms/cloud-privacy-notice">l'Avis de Confidentialité de Google Cloud</a>
+        <br>
+        et aux
+        <br>
+        <a href="https://ai.google.dev/gemini-api/terms">Conditions supplémentaires de l'API Google Gemini</a>
+         spécifiquement la section "Services non payants – Comment Google utilise vos données"
+        </p>
+        <h2>Sécurité des Données</h2>
+        <p>Toutes les communications réseau utilisent le cryptage HTTPS. Aucune donnée n'est transmise lors de l'utilisation du mode hors ligne (Gemma Local).</p>
+    </div>
+
+    <div id="lang-de" class="content-section">
+        <h1>Datenschutzerklärung für AI Scribe</h1>
+        <p><strong>Zuletzt aktualisiert:</strong> 18. Januar 2026</p>
+        <h2>Einleitung</h2>
+        <p>AI Scribe ist eine Anwendung zur Audio- und Bildtranskription. Diese Datenschutzerklärung erläutert, wie wir mit Ihren Daten umgehen.</p>
+        <h2>Datenerhebung und -verarbeitung</h2>
+        <h3>Audio- und Bilddaten</h3>
+        <ul>
+            <li><strong>Lokale Verarbeitung (Gemma-Modus):</strong> Wenn Sie die lokale Transkription Gemma 3n E2B verwenden, erfolgt die gesamte Audio- und Bildverarbeitung vollständig auf Ihrem Gerät. Es werden keine Audio- oder Bilddaten an externe Server übertragen.</li>
+            <li><strong>Cloud-Verarbeitung (Google Cloud API-Modus):</strong> Wenn Sie die Google Cloud API für die Transkription wählen, werden Ihre Audio- und Bilddaten zur Verarbeitung an Google Cloud-Server gesendet.</li>
+        </ul>
+        <h3>Transkriptionen</h3>
+        <p>Alle Transkriptionen werden lokal auf Ihrem Gerät gespeichert. Wir haben keinen Zugriff auf Ihre Transkriptionen.</p>
+        <h2>Daten, die wir NICHT erfassen</h2>
+        <p>Wir erfassen keine: persönlichen Informationen, Nutzungsanalysen, Standortdaten, Gerätekennungen oder Audioaufnahmen bzw. Bilder.</p>
+        <h2>Dienste von Drittanbietern</h2>
+        <p>Bei Verwendung des Cloud API-Modus werden Audio- und Bilddaten von der Google Cloud API verarbeitet, vorbehaltlich des <br>
+        <a href="https://cloud.google.com/terms/cloud-privacy-notice">Google Cloud Datenschutzhinweises</a>
+        <br>
+        und der
+        <br>
+        <a href="https://ai.google.dev/gemini-api/terms">Zusätzlichen Nutzungsbedingungen der Google Gemini API</a>
+         insbesondere des Abschnitts "Unbezahlte Dienste – Wie Google Ihre Daten verwendet"
+        </p>
+        <h2>Datensicherheit</h2>
+        <p>Alle Netzwerkkommunikationen verwenden HTTPS-Verschlüsselung. Im Offline-Modus (Gemma Local) werden keine Daten übertragen.</p>
+    </div>
+
+    <div id="lang-pt" class="content-section">
+        <h1>Política de Privacidade do AI Scribe</h1>
+        <p><strong>Última atualização:</strong> 18 de Janeiro de 2026</p>
+        <h2>Introdução</h2>
+        <p>O AI Scribe é um aplicativo de transcrição de áudio e imagem. Esta política de privacidade explica como lidamos com seus dados.</p>
+        <h2>Coleta e Processamento de Dados</h2>
+        <h3>Dados de Áudio e Imagem</h3>
+        <ul>
+            <li><strong>Processamento Local (Modo Gemma):</strong> Ao usar a transcrição local Gemma 3n E2B, todo o processamento de áudio e imagem ocorre inteiramente no seu dispositivo. Nenhum dado de áudio ou imagem é transmitido para servidores externos.</li>
+            <li><strong>Processamento em Nuvem (Modo Google Cloud API):</strong> Ao escolher a API do Google Cloud para transcrição, seus dados de áudio e imagem são enviados aos servidores do Google Cloud para processamento.</li>
+        </ul>
+        <h3>Transcrições</h3>
+        <p>Todas as transcrições são armazenadas localmente no seu dispositivo. Nós não temos acesso às suas transcrições.</p>
+        <h2>Dados que NÃO coletamos</h2>
+        <p>Não coletamos: informações pessoais, análises de uso, dados de localização, identificadores de dispositivos ou quaisquer gravações de áudio ou imagens.</p>
+        <h2>Serviços de Terceiros</h2>
+        <p>Ao usar o modo Cloud API, os dados de áudio e imagem são processados pela API do Google Cloud, sujeitos ao <br>
+        <a href="https://cloud.google.com/terms/cloud-privacy-notice">Aviso de Privacidade do Google Cloud</a>
+        <br>
+        e aos
+        <br>
+        <a href="https://ai.google.dev/gemini-api/terms">Termos Adicionais da API Google Gemini</a>
+         especificamente a seção "Serviços não pagos – Como o Google usa seus dados"
+        </p>
+        <h2>Segurança de Dados</h2>
+        <p>Todas as comunicações de rede usam criptografia HTTPS. Nenhum dado é transmitido ao usar o modo offline (Gemma Local).</p>
+    </div>
+
+    <script>
+        function showLang(langCode) {
+            // Nasconde tutte le sezioni
+            const sections = document.querySelectorAll('.content-section');
+            sections.forEach(s => s.classList.remove('active'));
+
+            // Mostra la sezione scelta
+            const target = document.getElementById('lang-' + langCode);
+            if (target) {
+                target.classList.add('active');
+            } else {
+                // FALLBACK: Se la lingua non esiste (es. Russo, Cinese), mostra Inglese
+                document.getElementById('lang-en').classList.add('active');
+            }
+        }
+
+        // 1. Rileva lingua browser
+        const userLang = navigator.language || navigator.userLanguage; 
+        const shortLang = userLang.split('-')[0]; // Prende 'it' da 'it-IT'
+        
+        // 2. Elenco lingue supportate
+        const supported = ['en', 'it', 'es', 'fr', 'de', 'pt'];
+        
+        // 3. Avvio: se shortLang è supportata usa quella, altrimenti 'en'
+        showLang(supported.includes(shortLang) ? shortLang : 'en');
+    </script>
 </body>
 </html>
